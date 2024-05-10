@@ -6,7 +6,7 @@ import io.chipmango.navigation.destination.DestinationFactory
 
 object Screens {
     private val factory by lazy {
-        DestinationFactory(BuildConfig.appScheme, BuildConfig.appHost)
+        DestinationFactory(BuildConfig.app_scheme, BuildConfig.app_scheme)
     }
 
     val Home = factory.create(

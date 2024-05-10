@@ -1,16 +1,26 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id("com.android.application") version "8.1.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.10" apply false
-    id("com.android.library") version "8.1.2" apply false
-    id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
-    id("com.google.dagger.hilt.android") version "2.48" apply false
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin") version "2.0.1"
-
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.android.hilt) apply false
+    alias(libs.plugins.jetbrains.kotlin.android) apply false
+    alias(libs.plugins.secrets.gradle.plugin) apply false
+    alias(libs.plugins.kotlin.parcelize) apply false
+    alias(libs.plugins.firebase.crashlytics) apply false
+    alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.google.services) apply false
+    alias(libs.plugins.firebase.performance) apply false
 }
 
 tasks {
     val clean by registering(Delete::class) {
-        delete(buildDir)
+        delete(layout.buildDirectory)
     }
+}
+
+buildscript {
+    val appId by extra { "com.solid.app" }
+    val minimumSdkVersion by extra { 26 }
+    val buildSdkVersion by extra { 34 }
+    val targetSdkVersion by extra { 34 }
+    val composeCompilerVersion by extra { "1.5.12" }
 }

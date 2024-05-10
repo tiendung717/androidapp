@@ -2,30 +2,23 @@ package com.solid.app.ui
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
-import com.solid.app.navigation.AppNavigator
-import io.chipmango.theme.theme.AppTheme
+import com.solid.app.ApplicationTheme
+import com.solid.app.navigation.MainNavigation
+import com.solid.app.ui.base.EdgeToEdgeActivity
+import dagger.hilt.android.AndroidEntryPoint
 
-class MainActivity : AppCompatActivity() {
+@AndroidEntryPoint
+class MainActivity : EdgeToEdgeActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainApp()
-        }
-    }
-
-    @Composable
-    private fun MainApp() {
-        val navController = rememberNavController()
-
-        AppTheme(useDarkTheme = isSystemInDarkTheme()) {
-            AppNavigator(
-                navController = navController
-            )
-        }
+            ApplicationTheme {
+                MainNavigation(
+                    navController = rememberNavController()
+                )
+            }        }
     }
 }

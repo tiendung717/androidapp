@@ -1,14 +1,12 @@
-package com.solid.app.ui
+package com.solid.app.ui.base
 
-import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-
-class SplashActivity : AppCompatActivity() {
+abstract class EdgeToEdgeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startActivity(Intent(this, MainActivity::class.java))
-        finish()
+        enableEdgeToEdge()
     }
 }

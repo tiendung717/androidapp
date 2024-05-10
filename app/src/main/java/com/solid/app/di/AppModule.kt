@@ -1,7 +1,6 @@
 package com.solid.app.di
 
-import com.solid.app.theme.darkColors
-import com.solid.app.theme.lightColors
+import androidx.compose.material.lightColors
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -28,8 +27,8 @@ class AppModule {
     @Provides
     fun provideThemeColor() : ThemeColor {
         return ThemeColor(
-            light = lightColors,
-            dark = darkColors
+            light = com.solid.module.theme.lightColors,
+            dark = com.solid.module.theme.darkColors
         )
     }
 }
