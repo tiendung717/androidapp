@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67143404761",
+    "project_id": "solid-soft",
+    "storage_bucket": "solid-soft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67143404761:android:c99b048d53fad3169742c8",
+        "android_client_info": {
+          "package_name": "com.solid.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67143404761-1s917aahe4nua8ve41n2tstm4thn3g86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuCEjovuasIewqRw2AiJMPpJvmckw6Gu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67143404761-1s917aahe4nua8ve41n2tstm4thn3g86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
