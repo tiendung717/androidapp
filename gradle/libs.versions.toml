@@ -47,8 +47,8 @@ gson = "2.10.1"
 
 # Chipmango
 chipmango = "0.5.1"
-chipmango-revenue-cat = "0.5.5"
-chipmango-ad = "0.5.4"
+chipmango-revenue-cat = "0.6.1"
+chipmango-ad = "0.5.9"
 chipmango-room-converters = "0.3.8"
 
 # FastCSV

@@ -88,6 +88,8 @@ secrets {
 
 dependencies {
     implementation(project(":themes"))
+    implementation(project(":uikit"))
+    implementation(project(":tracking"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.material)
