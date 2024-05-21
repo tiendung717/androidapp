@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <plurals name="work_entry">
+        <item quantity="one">1 entry</item>
+        <item quantity="other">%d entries</item>
+    </plurals>
+
+    <plurals name="tag_selected">
+        <item quantity="zero">No tags selected</item>
+        <item quantity="one">1 Tag selected</item>
+        <item quantity="other">%d Tags selected</item>
+    </plurals>
+</resources>
